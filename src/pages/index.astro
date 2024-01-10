@@ -1,8 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { SITE_TITLE_SHORT, SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from "../layouts/BlogPost.astro";
 ---
 
 <!doctype html>
@@ -11,21 +10,16 @@ import { SITE_TITLE_SHORT, SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE_SHORT} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>Hi,</h1>
+		<Layout
+				title="Hi,"
+				description="Lorem ipsum dolor sit amet"
+				pubDate={new Date('02/01/2024')}
+		>
 			<p>
 				welcome to my personal blog, where I collect my learnings in tech
-      throughout the years. Feel free to browse through my posts.
+				throughout the years. Feel free to browse through my posts.
 			</p>
-		</main>
-		<Footer />
+			<p>– Mohamad</p>
+		</Layout>
 	</body>
 </html>
-<style>
-	main {
-		margin-top: 3em;
-		background-color: var(--secondary);
-		border-radius: 5px;
-	}
-</style>

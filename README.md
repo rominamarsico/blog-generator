@@ -1,4 +1,4 @@
-# Blog by Ramdadam
+# Blog by Mohamad Ramadan
 
 Made by Romina Marsico
 

@@ -5,16 +5,17 @@ import Layout from '../layouts/BlogPost.astro';
 <Layout
 	title="About Me"
 	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
+	pubDate={new Date('02/01/2024')}
 >
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+		My name is <span>Mohamad Ramadan</span> and I am a <span>Cloud Architect</span> working as a <span>Freelancer</span>.
+	</p>
+	<p>
+		For business requirements contact <a href="mailto:freelance@ramda.net">freelance@ramda.net</a>
 	</p>
 </Layout>
+<style>
+	span {
+		color: var(--primary)
+	}
+</style>

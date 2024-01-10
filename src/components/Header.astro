@@ -5,20 +5,21 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div>
+			<h2><a href="/" class="blog-title">{SITE_TITLE}</a></h2>
+		</div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<div></div>
 	</nav>
 </header>
 <style>
 	header {
 		margin: 0;
 		padding: 0 1em;
-		border-bottom: 1px solid var(--gray);
+		border-bottom: 1px solid var(--primary);
 		position: sticky;
 	}
 	h2 {
@@ -35,6 +36,9 @@ import { SITE_TITLE } from '../consts';
 		align-items: center;
 		justify-content: space-between;
 	}
+	nav > div {
+		flex-grow: 1;
+	}
 	nav a {
 		padding: 1em 0.5em;
 		border-bottom: 4px solid transparent;
@@ -42,14 +46,10 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--gray);
+		border-bottom-color: var(--primary);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
+	@media (max-width: 530px) {
+		.blog-title {
 			display: none;
 		}
 	}

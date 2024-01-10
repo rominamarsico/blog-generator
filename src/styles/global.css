@@ -5,23 +5,12 @@
  */
 
 :root {
-	/*--accent: #2337ff;*/
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
-
 	/* own palette */
-	--text: #ebebeb;
-	--background: #171717;
-	--primary: #433d6b;
-	--secondary: #242424;
-	--accent: #8a8a8a;
-	--gray: #60739f;
+	--text: #E2F0F1;
+	--background: #122424;
+	--primary: #A7D3D360;
+	--secondary: #3E626260;
+	--accent: #6E8C9660;
 }
 @font-face {
 	font-family: 'Atkinson';
@@ -45,7 +34,7 @@ body {
 	font-variant-numeric: oldstyle-nums;	
 	background-color: var(--background);
 	color: var(--text);
-	margin: 0;
+	margin: 0 1rem;
 	padding: 0;
 	text-align: left;
 	background-size: 100% 600px;
@@ -93,7 +82,7 @@ a {
 	color: var(--text);
 }
 a:hover {
-	color: var(--gray);
+	color: var(--primary);
 	transition: 0.3s;
 }
 p {
@@ -125,7 +114,7 @@ code {
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
-	background-color: var(--primary) !important;
+	background-color: var(--accent) !important;
 }
 pre > code {
 	all: unset;
@@ -147,6 +136,10 @@ hr {
 	main {
 		padding: 1em;
 	}
+}
+
+@media (max-width: 720px) {
+
 }
 
 .sr-only {
